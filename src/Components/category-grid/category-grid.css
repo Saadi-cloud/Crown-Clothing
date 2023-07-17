@@ -1,0 +1,100 @@
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 33.33%;
+    padding-bottom: 20px;
+    
+  }
+  .column1 {
+    width: 49%;
+    padding-bottom: 20px;
+    padding-right: 10px;
+  }
+  .bg {
+    position: absolute;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    left: 37%;
+    top: 25%;
+    border: 1px solid black;
+    background-color: #ffffff59;
+    
+    
+  }
+  .img {
+    background-image: url('C:\React_Tut\crwn-clothing\public\Assets\img\hats.jpg');
+    width: 97%;
+    height: 271px;
+    background-size: cover;
+    position: relative;
+    transform: scale(1);
+    transition: all .6s ease-out 0s;
+    
+  }
+  .img:hover{
+      transform: scale(1.1);
+    transition: all .8s ease-out 0s;
+  
+  }
+  .img1:hover{
+      transform: scale(1.1);
+    transition: all .8s ease-out 0s;
+  
+  }
+  .img2:hover{
+      transform: scale(1.1);
+    transition: all .8s ease-out 0s;
+  
+  }
+  .img3:hover{
+      transform: scale(1.1);
+    transition: all .8s ease-out 0s;
+  
+  }
+  .img4:hover{
+      transform: scale(1.1);
+    transition: all .8s ease-out 0s;
+  
+  }
+  .img1 {
+    background-image: url('C:\React_Tut\crwn-clothing\public\Assets\img\jackets.jpg');
+    width: 100%;
+    height: 271px;
+    background-repeat: no-repeat;
+    position: relative;
+    transform: scale(1);
+    transition: all .6s ease-out 0s;
+  }
+  .img2 {
+    background-image: url('C:\React_Tut\crwn-clothing\public\Assets\img\sneakers.jpg');
+    width: 100%;
+    height: 271px;
+    background-repeat: no-repeat;
+    position: relative;
+    transform: scale(1);
+    transition: all .6s ease-out 0s;
+  }
+  .img3 {
+    background-image: url('C:\React_Tut\crwn-clothing\public\Assets\img\womens.jpg');
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    position: relative;
+    transform: scale(1);
+    transition: all .6s ease-out 0s;
+  }
+  .img4 {
+    background-image: url('C:\React_Tut\crwn-clothing\public\Assets\img\men.jpg');
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    position: relative;
+    transform: scale(1);
+    transition: all .6s ease-out 0s;
+  }
