@@ -8,7 +8,7 @@ export default function Men() {
       <div className="container">
         <div className="row">
           <div className="column">
-            <div className="fWePjf">
+            <div className="detail">
               <img src="https://www.crown-clothes.com/images/camo-vest.jpg" alt="" className="dd" />
               <div className='row' style={{justifyContent: "space-between"}}>
                     <span style={{paddingLeft: "23px"}}>Blue</span>
@@ -18,7 +18,7 @@ export default function Men() {
             
           </div>
           <div className="column">
-          <div className="fWePjf">
+          <div className="detail">
               <img src="https://www.crown-clothes.com/images/floral-shirt.jpg" alt="" className="dd" />
               <div className='row' style={{justifyContent: "space-between"}}>
                     <span style={{paddingLeft: "23px"}}>Floral</span>
@@ -27,7 +27,7 @@ export default function Men() {
             </div>
           </div>
           <div className="column">
-          <div className="fWePjf">
+          <div className="detail">
               <img src="https://www.crown-clothes.com/images/long-sleeve.jpg" alt=""  className="dd"/>
               <div className='row' style={{justifyContent: "space-between"}}>
                     <span style={{paddingLeft: "23px"}}>Floral Dress</span>
@@ -39,7 +39,7 @@ export default function Men() {
           
           <div className="row">
           <div className="column">
-          <div className="fWePjf">
+          <div className="detail">
               <img src="https://www.crown-clothes.com/images/pink-shirt.jpg" alt=""  className="dd"/>
               <div className='row' style={{justifyContent: "space-between"}}>
                     <span style={{paddingLeft: "23px"}}>Red Dots Dress</span>
@@ -48,7 +48,7 @@ export default function Men() {
             </div>
           </div>
           <div className="column">
-          <div className="fWePjf">
+          <div className="detail">
               <img src="https://www.crown-clothes.com/images/roll-up-jean-shirt.jpg" alt=""  className="dd"/>
               <div className='row' style={{justifyContent: "space-between"}}>
                     <span style={{paddingLeft: "23px"}}>Striped Sweater</span>
@@ -57,7 +57,7 @@ export default function Men() {
             </div>
           </div>
           <div className="column">
-          <div className="fWePjf">
+          <div className="detail">
               <img src="https://www.crown-clothes.com/images/polka-dot-shirt.jpg" alt=""  className="dd"/>
               <div className='row' style={{justifyContent: "space-between"}}>
                     <span style={{paddingLeft: "23px"}}>Yellow Track Suit</span>

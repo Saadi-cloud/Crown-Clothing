@@ -1,18 +1,23 @@
 import React, { Fragment } from "react";
 import {signInWithGooglePopup,  createUserDocumentFromAuth} from './Utility/Firebase/FirebaseUtility.js'
 
-
-
-    
-
-
 export default function SignIn() {
-    const Sign = async () => {
-    
-        const {user} = await signInWithGooglePopup();
-        const response = await createUserDocumentFromAuth(user);
-        console.log('Response: ', response);
-    }
+  const [name, setName] = React.useState("");
+
+  const handleNameChange = (e) => {
+    const {name, value} = e.target
+    setName(value)
+    console.log(name);
+    console.log(value);
+  }
+  
+  const Sign = async () => {
+  
+      const {user} = await signInWithGooglePopup();
+      const response = await createUserDocumentFromAuth(user);
+      console.log('Response: ', response);
+  }
+  
   return (
 
 
@@ -22,15 +27,20 @@ export default function SignIn() {
         <div className="row">
           <div className="col md-6">
                 <h2>I already have an account</h2>
+                <form onSubmit={() => {}}>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">
                   Email address
                 </label>
                 <input
+                  value={name}
+                  name="email"
+                 onChange={handleNameChange} 
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+
                 />
                 <div id="emailHelp" class="form-text">
                   We'll never share your email with anyone else.
@@ -62,6 +72,7 @@ export default function SignIn() {
               <button type="submit" className="ms-3 btn btn-success" onClick={Sign}>
                 Google Account
               </button>
+              </form>
           </div>
         </div>
       </div>
