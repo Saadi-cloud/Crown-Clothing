@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {signInWithGooglePopup,  createUserDocumentFromAuth} from './Utility/Firebase/FirebaseUtility.js'
 
 export default function SignIn() {
@@ -19,9 +19,6 @@ export default function SignIn() {
   }
   
   return (
-
-
-    
     <div>
       <div className="container">
         <div className="row">
@@ -54,8 +51,10 @@ export default function SignIn() {
                   type="password"
                   class="form-control"
                   id="exampleInputPassword1"
+                  
                 />
               </div>
+              
               <div class="mb-3 form-check">
                 <input
                   type="checkbox"
@@ -74,10 +73,78 @@ export default function SignIn() {
               </button>
               </form>
           </div>
+          <div className="col md-6">
+                <h2>I do not have an account</h2>
+                <form onSubmit={() => {}}>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  Email address
+                </label>
+                <input
+                  name="email"
+                 onChange={handleNameChange} 
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                  
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  Display Name
+                </label>
+                <input
+                placeholder="Display Name"
+                 onChange={handleNameChange} 
+                  type="text"
+                  class="form-control"
+                  
+                  id="exampleInputEmail1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                  aria-required="true"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">
+                  Confirm Password
+                </label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Confirm Password"
+                  aria-required="true"
+                  
+                  
+                />
+                
+              </div>
+            
+              
+              <button type="submit" class="btn btn-primary">
+                Sign Up
+              </button>
+              
+              </form>
+          </div>
         </div>
       </div>
     </div>
 
   );
   
+
 }

@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import './navigation.css'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 function NavBar() {
     return (
       <div>
@@ -10,13 +10,13 @@ function NavBar() {
             <nav className="head1">
               <ul className="menu">
                 <li className="header-item">
-                  <Link to="/" className="header-link">HOME</Link>
+                  <NavLink to="/" className="header-link">HOME</NavLink>
                 </li>
                 <li className="header-item">
-                  <Link className="header-link">SHOP</Link>
+                  <NavLink className="header-link">SHOP</NavLink>
                 </li>
                 <li className="header-item">
-                  <Link to="/sign" className='header-link'>SIGNIN</Link>
+                  <NavLink to="/sign" className='header-link'>SIGNIN</NavLink>
                 </li>
                 <li className="header-item">
                   <a className="header-link">LOGIN</a>

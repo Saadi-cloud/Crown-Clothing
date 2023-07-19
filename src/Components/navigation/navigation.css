@@ -14,6 +14,10 @@
   margin-bottom: 2.5rem;
   user-select: none;
 }
+.active {
+    background-color: rgb(101, 186, 133);
+    color: rgb(59, 124, 230);
+}
 
 .header-item {
     width: 100%;
@@ -45,3 +49,7 @@
     text-decoration: none;
     color: black;
   }
+.header-link:visited{
+    color:red!important;
+    background-color: yellow;
+}

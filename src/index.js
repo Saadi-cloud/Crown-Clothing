@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -9,6 +9,9 @@ import CategoryGrid from './Components/category-grid/category-grid';
 import CategoryGridsimple from './Components/category-grid/category-grid-simple';
 import NavBar from './Components/navigation/navigation-bar';
 import { BrowserRouter } from 'react-router-dom';
+import CreateAccount from './Components/Password';
+import FormikForm from "./Components/PasswordFormikYup"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +19,9 @@ root.render(
     <BrowserRouter>
     <App/>
     </BrowserRouter>
+    {/* <CreateAccount/>
+    <FormikForm/> */}
+    
     {/* <Women/> */}
     {/* <Hats/> */}
     {/* <NavBar/> */}
