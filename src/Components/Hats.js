@@ -14,8 +14,7 @@ export default function Hats() {
                     <span style={{paddingLeft: "23px"}}>{val.name}</span>
                     <span style={{paddingRight: "23px"}}>{val.number}</span>
                 </div>
-            </div>
-            
+            </div> 
           </div>
           ))}
         </div>

@@ -10,10 +10,10 @@ function NavBar() {
             <nav className="head1">
               <ul className="menu">
                 <li className="header-item">
-                  <a className="header-link">HOME</a>
+                  <Link to="/" className="header-link">HOME</Link>
                 </li>
                 <li className="header-item">
-                  <a className="header-link">SHOP</a>
+                  <Link className="header-link">SHOP</Link>
                 </li>
                 <li className="header-item">
                   <Link to="/sign" className='header-link'>SIGNIN</Link>
